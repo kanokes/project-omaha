@@ -18,9 +18,11 @@ The initial build will establish:
 
 ## Product vision
 
-Project Omaha combines the accessible, behind-the-pitcher feel of classic baseball games such as *Bases Loaded* with the fast progression and dynasty appeal of *Retro Bowl*. The player directly plays baseball while building a college program across many seasons.
+Project Omaha combines the accessible, behind-the-pitcher feel of classic baseball games such as _Bases Loaded_ with the fast progression and dynasty appeal of _Retro Bowl_. The player directly plays baseball while building a college program across many seasons.
 
 ## Setup
+
+Requires Node.js 22 or newer.
 
 ```bash
 npm install
