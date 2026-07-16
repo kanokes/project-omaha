@@ -43,3 +43,15 @@ This file records product, architecture, and scope decisions that materially aff
 **Decision:** Project Omaha will not use pay-to-win systems, energy timers, card packs, or gacha mechanics.
 
 **Reason:** Monetization must not undermine baseball strategy or dynasty integrity.
+
+## D-008: Lightweight Sprint 0 navigation
+
+**Decision:** The initial two-screen application uses a typed Zustand screen state rather than a URL routing dependency.
+
+**Reason:** Title-to-sandbox navigation does not yet require deep links or browser history. This keeps the foundation small while preserving a clear React-owned navigation boundary that can be replaced when routes become necessary.
+
+## D-009: Seeded random implementation
+
+**Decision:** Simulation randomness is exposed through a minimal `RandomSource` interface, with Mulberry32 as the initial seeded implementation.
+
+**Reason:** Dependency injection keeps simulation deterministic and rendering-independent without adding a library for this small, well-tested primitive.

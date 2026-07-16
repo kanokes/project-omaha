@@ -101,3 +101,13 @@ Responsible for:
 ## Initial implementation rule
 
 Do not build dynasty features until the batting and pitching sandboxes establish a satisfying on-field interaction model.
+
+## Sprint 0 implementation
+
+- `src/app` owns the screen state and application shell.
+- `src/ui` owns React screens and shared presentation styles.
+- `src/game` owns the Phaser game lifecycle and field scene.
+- `src/simulation` contains framework-independent timing and randomness primitives.
+- `src/tests` contains shared browser-test setup; `e2e` contains critical Playwright journeys.
+
+The Sprint 0 shell uses a small explicit screen state instead of a routing dependency. Phaser is created and destroyed through a React lifecycle adapter, while baseball outcomes remain isolated from both frameworks.
